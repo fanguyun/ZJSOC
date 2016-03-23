@@ -1,0 +1,190 @@
+<div id="nav">
+    <ul id="navUl">
+        <li class="navIcon">首页 ></li>
+        <li class="navIcon">小区监控 ></li>
+        <li class="navIcon" id="selectCellName">... ></li>
+        <li>告警原因</li>
+    </ul>
+</div>
+<div id="serAddrName">
+    <p class="serNameHead" id="cellserNameHead">102132142 武林广场站台及隧道之间</p>
+    <table id="trendTable">
+        <tr class="tHead">
+            <td class="tdPadding">行政区</td>
+            <td>告警级别</td>
+            <td>告警起始时间</td>
+            <td>告警持续时长(H)</td>
+            <td>Web业务响应时延(s)</td>
+            <td>影响用户数</td>
+            <td>流量(GB)</td>
+            <td>业务量(次)</td>
+            <td>历史告警次数</td>
+        </tr>
+        <tbody class="tBody" id="cellListTbody">
+        <!--<tr>
+            <td>西湖区</td>
+            <td><span class="eTdIcon"></span></td>
+            <td>2015.11.18 12:00:00</td>
+            <td>3</td>
+            <td>2</td>
+            <td>234</td>
+            <td>23</td>
+            <td>45</td>
+            <td>14</td>
+        </tr>-->
+        </tbody>
+    </table>
+    <div id="reasonBlock">
+    <div id="reasonBlock1">
+        <p class="reasonTitle">推荐根因PM</p>
+        <table class="reasonTable">
+            <tr class="reasonTHead">
+                <td class="tdPadding">指标名称</td>
+                <td>指标值</td>
+                <td>置信度</td>
+            </tr>
+            <tbody id="tuijianPM">
+                <!--<tr>
+                    <td class="tdPadding">TCP_UTILITY_RATIO</td>
+                    <td><span class="redTd">68.79%</span></td>
+                    <td>45.6%</td>
+                </tr>-->
+
+            </tbody>
+        </table>
+    </div>
+    <div id="reasonBlock2">
+        <p class="reasonTitle">推荐根因FM</p>
+        <table class="reasonTable">
+            <tr class="reasonTHead">
+                <td class="tdPadding">指标名称</td>
+                <td>指标值</td>
+                <td>置信度</td>
+            </tr>
+            <tbody id="tuijianFM">
+                <!--<tr>
+                    <td class="tdPadding">用户承载链路故障</td>
+                    <td><span class="redTd">重要</span></td>
+                    <td>45.6%</td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+<div id="serReason">
+    <p class="serReasonTitle">异常点根因分析</p>
+    <div id="serReasonBlock">
+        <div id="serReasonHead">
+            <div id="pmBlock">PM</div>
+            <div id="fmBlock" class="serActive">FM</div>
+        </div>
+        <div id="serReasonLeft">
+            <!--PM-->
+            <div class="none" id="PMobj">
+                <div class="serCard serCardActive">
+                    <div class="serCardTitle">异常起始时间 2015.11.25 18:54:00</div>
+                    <div class="serCardBody">
+                        <table>
+                            <tr>
+                                <td>PM指标</td>
+                                <td>指标值/阈值</td>
+                            </tr>
+                            <tr>
+                                <td>R99_DL_Traffice_Ratio</td>
+                                <td><span class="red">28</span>/20</td>
+                            </tr>
+                            <tr>
+                                <td>PS_Power_Cong_Num</td>
+                                <td><span class="red">38</span>/20</td>
+                            </tr>
+                            <tr>
+                                <td>HSDPA_User_Throughput</td>
+                                <td><span class="red">76.36%</span>/60%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="serCard">
+                    <div class="serCardTitle">异常起始时间 2015.11.25 18:54:00</div>
+                    <div class="serCardBody">
+                        <table>
+                            <tr>
+                                <td>FM告警</td>
+                                <td>告警级别</td>
+                            </tr>
+                            <tr>
+                                <td>Iub_DropPackage_Ratio</td>
+                                <td><span class="red">56.4%</span>/50%</td>
+                            </tr>
+                            <tr>
+                                <td>HS_Users_Cong_Num</td>
+                                <td><span class="red">28</span>/10</td>
+                            </tr>
+                            <tr>
+                                <td>IubFail_Num</td>
+                                <td><span class="red">20</span>/10</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!--FM-->
+            <div id="FMobj">
+                <div class="serCard serCardActive">
+                    <div class="serCardTitle">异常起始时间 2015.11.25 18:54:00</div>
+                    <div class="serCardBody">
+                        <table>
+                            <tr>
+                                <td>FM告警</td>
+                                <td>告警级别</td>
+                            </tr>
+                            <tr>
+                                <td>用户名链路承载故障</td>
+                                <td class="red">重要</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="serCard">
+                    <div class="serCardTitle">异常起始时间 2015.11.25 18:54:00</div>
+                    <div class="serCardBody">
+                        <table>
+                            <tr>
+                                <td>FM告警</td>
+                                <td>告警级别</td>
+                            </tr>
+                            <tr>
+                                <td>用户名链路承载故障</td>
+                                <td class="red">重要</td>
+                            </tr>
+                            <tr>
+                                <td>射频单元业务不可用</td>
+                                <td class="blue">提示</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="serReasonRight">
+            <!--PM-->
+            <div clas="celllistBox" class="none">
+                <div id="pmCelllist1" style="width:790px;height:330px;"></div>
+                <div id="pmCelllist2" style="width:790px;height:330px;"></div>
+                <div id="pmCelllist3" style="width:790px;height:330px;"></div>
+                <div id="pmCelllist4" style="width:790px;height:330px;"></div>
+                <div class="tipsAdd">
+                    <span>添加对比指标</span>
+                </div>
+            </div>
+            <!--FM-->
+            <div clas="celllistBox">
+                <div id="emCelllist1" style="width:790px;height:330px;"></div>
+                <div id="emCelllist2" style="width:790px;height:330px;"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

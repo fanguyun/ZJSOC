@@ -1,0 +1,168 @@
+<div id="nav">
+    <ul id="navUl">
+        <li class="navIcon">首页 ></li>
+        <li class="navIcon">SP监控 ></li>
+        <li class="navIcon" id="miaobaosp">... ></li>
+        <li>告警原因</li>
+    </ul>
+</div>
+<div id="serAddrName">
+    <p class="serNameHead" id="thisSPhost">...</p>
+    <table id="trendTable">
+        <tr class="tHead">
+            <td class="tdPadding">事务级HTTP成功率(%)</td>
+            <td>告警级别</td>
+            <td>告警起始时间</td>
+            <td>告警持续时长(H)</td>
+            <td>影响用户数</td>
+            <td>流量(GB)</td>
+            <td>业务量(次)</td>
+            <td>历史告警次数</td>
+        </tr>
+        <tbody class="tBody">
+        <tr>
+            <td><span class="redTd">70.23%</span></td>
+            <td><span class="eTdIcon"></span></td>
+            <td>2015/12/1 12:15:00</td>
+            <td>60</td>
+            <td>3421</td>
+            <td>49</td>
+            <td>19941</td>
+            <td>13</td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="reasonSpBlock">
+    <div id="reasonBlock1">
+        <p class="reasonTitle">异常点</p>
+        <table class="reasonTable">
+            <tr class="reasonTHead">
+                <td class="tdPadding">异常起始时间</td>
+                <td>事务级HTTP成功率(%)</td>
+            </tr>
+            <tbody id="splistTbody">
+                <tr>
+                    <td class="tdPadding">2015.11.18    01:00:00</td>
+                    <td><span class="redTd">68.79%</span></td>
+                </tr>
+                <tr class="spActive">
+                    <td class="tdPadding">2015.11.18    02:00:00</td>
+                    <td><span class="redTd">68.79%</span></td>
+                </tr>
+                <tr>
+                    <td class="tdPadding">2015.11.18    03:00:00</td>
+                    <td><span class="redTd">68.79%</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="reasonBlock3">
+        <p class="reasonTitle">建议重点关注维度</p>
+        <table class="reasonTable">
+            <tr class="reasonTHead">
+                <td class="tdPadding">维度</td>
+                <td>历史成功率(%)</td>
+                <td>当前成功率(%)</td>
+                <td>影响度(%)</td>
+            </tr>
+            <tbody id="fanistBody"></tbody>
+            <!--<tr>
+                <td class="tdPadding">Pgw_IP    10.45.67.32</td>
+                <td><span class="redTd">2.79</span></td>
+                <td>2.79</td>
+                <td>45.6%</td>
+            </tr>
+            <tr>
+                <td class="tdPadding">Pgw_IP    10.45.67.62</td>
+                <td><span class="redTd">2.79</span></td>
+                <td>1.79</td>
+                <td>25.6%</td>
+            </tr>
+            <tr>
+                <td class="tdPadding">APN             cmhk</td>
+                <td><span class="orangeTd">2.79</span></td>
+                <td>2.79</td>
+                <td>45.6%</td>
+            </tr>
+            <tr>
+                <td class="tdPadding">SP_IP        125.35.67.62</td>
+                <td><span class="redTd">2.79</span></td>
+                <td>2.79</td>
+                <td>45.6%</td>
+            </tr>
+            <tr>
+                <td class="tdPadding">APN            136.45.57.77</td>
+                <td><span class="orangeTd">2.79</span></td>
+                <td>2.79</td>
+                <td>45.6%</td>
+            </tr>
+            <tr>
+                <td class="tdPadding">APN            136.45.57.72</td>
+                <td><span class="redTd">2.79</span></td>
+                <td>2.79</td>
+                <td>45.6%</td>
+            </tr>-->
+        </table>
+    </div>
+    </div>
+</div>
+<div id="serReason">
+    <p class="serReasonTitle">异常点问题维度Top20</p>
+    <div id="spReasonBlock">
+        <div id="serReasonHead">
+            <div id="pwgBlock">Pgw_IP</div>
+            <div id="apnBlock">APN</div>
+            <div id="spBlock">SP_IP</div>
+        </div>
+        <div id="spReasonLeft">
+            <div class="spserCard">
+                <div class="spCardBody">
+                    <table class="spTable" style="width:371px">
+                        <tr class="spTableHead">
+                            <td id="nametype"> IP</td>
+                            <td>历史成功率(s)</td>
+                            <td>当前成功率(s)</td>
+                            <td>影响度</td>
+                        </tr>
+                        <tbody id="spTabletbody">
+                            <tr class="spActive">
+                                <td>10.12.23.45</td>
+                                <td>2.7</td>
+                                <td class="red">2.79</td>
+                                <td>45.64%</td>
+                            </tr>
+                            <tr>
+                                <td>10.122.23.45</td>
+                                <td>3.7</td>
+                                <td class="red">1.79</td>
+                                <td>65.64%</td>
+                            </tr>
+                            <tr>
+                                <td>10.112.23.45</td>
+                                <td>2.7</td>
+                                <td class="red">2.79</td>
+                                <td>47.64%</td>
+                            </tr>
+                            <tr>
+                                <td>10.12.203.45</td>
+                                <td>2.7</td>
+                                <td class="red">2.79</td>
+                                <td>43.64%</td>
+                            </tr>
+                            <tr>
+                                <td>110.12.23.45</td>
+                                <td>1.7</td>
+                                <td class="red">1.79</td>
+                                <td>25.64%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="spReasonRight">
+            <div id="spRCanvas1"></div>
+            <div id="spRCanvas2"></div>
+        </div>
+    </div>
+</div>

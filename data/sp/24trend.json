@@ -1,0 +1,27 @@
+[
+  {"name":"0:00","value":23},
+  {"name":"1:00","value":24},
+  {"name":"2:00","value":38},
+  {"name":"3:00","value":46},
+  {"name":"4:00","value":25},
+  {"name":"5:00","value":21},
+  {"name":"6:00","value":22},
+  {"name":"7:00","value":42},
+  {"name":"8:00","value":41},
+  {"name":"9:00","value":28},
+  {"name":"10:00","value":42},
+  {"name":"11:00","value":29},
+  {"name":"12:00","value":35},
+  {"name":"13:00","value":43},
+  {"name":"14:00","value":24},
+  {"name":"15:00","value":39},
+  {"name":"16:00","value":44},
+  {"name":"17:00","value":27},
+  {"name":"18:00","value":34},
+  {"name":"19:00","value":39},
+  {"name":"20:00","value":22},
+  {"name":"21:00","value":22},
+  {"name":"22:00","value":23},
+  {"name":"23:00","value":37}
+
+]

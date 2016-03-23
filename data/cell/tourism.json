@@ -1,0 +1,11 @@
+[
+  {"name": "萧山区", "value":3,"children":[{"error":1,"normal":2}]},
+  {"name": "余杭区", "value":1,"children":[{"error":1,"normal":0}]},
+  {"name": "西湖区", "value":4,"children":[{"error":3,"normal":1}]},
+  {"name": "江干区", "value":2,"children":[{"error":0,"normal":2}]},
+  {"name": "拱墅区", "value":1,"children":[{"error":0,"normal":1}]},
+  {"name": "下城区", "value":2,"children":[{"error":1,"normal":1}]},
+  {"name": "上城区", "value":4,"children":[{"error":2,"normal":2}]},
+  {"name": "滨江区", "value":2,"children":[{"error":0,"normal":2}]},
+  {"name": "富阳区", "value":1,"children":[{"error":0,"normal":1}]}
+]

@@ -1,0 +1,160 @@
+<div id="monitor" class="block">
+    <div id="monitorNum"><span id="usermNum">0</span><span class="small">在线用户</span></div>
+    <div id="userNum"><span id="usersNum">0</span><span class="small">个</span><span class="smallInfo">异常用户</span> </div>
+    <div id="refreshTime"><span id="refreshInfo">更新时间:<span id="refreshDate"></span>（每十五分钟刷新一次）</span><span id="handRefresh"></span></div>
+</div>
+<div id="latitudeBlock">
+    <div class="qushiObj">
+        <div id="errorTrend"></div>
+        <a href="#cellGridShow?page=user"></a>
+    </div>
+    <div id="errorUser">
+        <div id="errUserTab" style="margin-bottom: 15px;">
+            <div id="allUser" class="activeTab">全网用户</div>
+            <!--<div id="vipUser">vip用户</div>-->
+        </div>
+        <div id="errUserChoose" class="none">
+            <div id="defaultOrder">默认排序</div>
+            <div id="errOrder" class="add">异常排序</div>
+            <div id="errNum" class="minus">异常次数</div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx1">
+            <p class="userCardName errIcon">46000xxxxxxxxx1</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">19</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx2">
+            <p class="userCardName redIcon">46000xxxxxxxxx2</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">18</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx3">
+            <p class="userCardName errIcon">46000xxxxxxxxx3</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">17</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx4">
+            <p class="userCardName errIcon">46000xxxxxxxxx4</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">15</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx5">
+            <p class="userCardName errIcon">46000xxxxxxxxx5</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">15</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx6">
+            <p class="userCardName redIcon">46000xxxxxxxxx6</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">13</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx7">
+            <p class="userCardName redIcon">46000xxxxxxxxx7</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">13</p>
+            </div>
+        </div>
+        <div class="userCard" userName="46000xxxxxxxxx8">
+            <p class="userCardName redIcon">46000xxxxxxxxx8</p>
+            <div class="userLeft">
+                <div class="userIcon"></div>
+            </div>
+            <div class="userRight">
+                <p class="errHours">24小时异常次数</p>
+                <p class="errUserNum">11</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="spInfo">
+    <p class="titleHead">异常维度分析</p>
+    <table id="trendTable" class="tableClass">
+        <tr class="tHead">
+            <td class="tdPadding">IMEI/终端</td>
+            <td>CellID</td>
+            <td>GridID</td>
+            <td>APN</td>
+            <td>SGW_IP</td>
+            <td>PGW_IP</td>
+            <td>SP_IP</td>
+            <td>异常用户数</td>
+            <td class="tdPadding">异常用户比例</td>
+        </tr>
+        <tbody class="tBody" id="userGridTbody">
+        <!--<tr>
+            <td>-&#45;&#45;</td>
+            <td>184930561</td>
+            <td>-&#45;&#45;</td>
+            <td>-&#45;&#45;</td>
+            <td>-&#45;&#45;</td>
+            <td>-&#45;&#45;</td>
+            <td>-&#45;&#45;</td>
+            <td>243</td>
+            <td>87%</td>
+        </tr>-->
+
+        </tbody>
+    </table>
+    <div id="tableFooter">
+        <div id="tFooterLeft">
+            <div class="select">
+                <div class="selOption">10行</div>
+                <div class="selOption">50行</div>
+                <div class="selOption">100行</div>
+            </div>
+            <div class="totalPage" id="cellTotalPage">共0条</div>
+        </div>
+        <div id="tFooterRight">
+            <span class="pageButton" id="prevPage"></span>
+            <span class="pageButton pageActive">1</span>
+  <!--          <span class="pageButton">2</span>
+            <span class="pageButton">3</span>
+            <span class="pageButton">4</span>
+            <span class="pageButton">5</span>
+            <span class="pageButton">...</span>
+            <span class="pageButton">16</span>-->
+            <span class="pageButton" id="nextPage"></span>
+            <div class="goAnyPage">
+                <span class="goText">跳转</span>
+                <input id="pageText" type="text">
+                <span id="goButton"></span>
+            </div>
+        </div>
+    </div>
+</div>

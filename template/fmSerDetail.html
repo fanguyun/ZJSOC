@@ -1,0 +1,72 @@
+<div id="nav">
+    <ul id="navUl">
+        <li class="navIcon">首页 ></li>
+        <li class="navIcon" id="thisSelelctName">... ></li>
+        <li>告警趋势</li>
+    </ul>
+</div>
+<div id="spInfo">
+    <div id="selectBlock" class="none">
+        <ul class="cellSelect">
+            <li>全部告警小区</li>
+            <li>网页</li>
+        </ul>
+        <div class="serchText">
+            <input type="text" placeholder="输入小区名称查找">
+        </div>
+        <span class="serchBtn"></span>
+    </div>
+    <div class="xiangsiObj">
+        <div id="serMapBlock"></div>
+        <ul id="xianxiqs">
+            <li class="dactive">日</li>
+            <li>周</li>
+            <li>月</li>
+        </ul>
+    </div>
+    <table id="trendTable">
+        <tr class="tHead" id="thisThead">
+            <td class="tdPadding">ID</td>
+            <td>小区名称</td>
+            <td>行政区</td>
+            <td>告警级别</td>
+            <td>告警起始时间</td>
+            <td>告警持续时长(H)</td>
+            <td>Web业务响应时延(S)</td>
+            <td>影响用户数</td>
+            <td>流量（GB）</td>
+            <td>业务量（次）</td>
+            <td>历史告警次数</td>
+            <td class="tdPadding">操作</td>
+        </tr>
+        <tbody class="tBody" id="cellTbody"></tbody>
+        <tbody class="tBody" id="spTbody"></tbody>
+        <tbody class="tBody" id="userGridTbody"></tbody>
+    </table>
+    <div id="tableFooter">
+        <div id="tFooterLeft">
+            <div class="select">
+                <div class="selOption">10行</div>
+                <div class="selOption">50行</div>
+                <div class="selOption">100行</div>
+            </div>
+            <div class="totalPage" id="cellTotalPage">共0条</div>
+        </div>
+        <div id="tFooterRight">
+            <span class="pageButton" id="prevPage"></span>
+            <span class="pageButton pageActive" type="yema">1</span>
+            <!--<span class="pageButton" type="yema">2</span>
+            <span class="pageButton">3</span>
+            <span class="pageButton">4</span>
+            <span class="pageButton">5</span>
+            <span class="pageButton">...</span>
+            <span class="pageButton">16</span>-->
+            <span class="pageButton" id="nextPage"></span>
+            <div class="goAnyPage">
+                <span class="goText">跳转</span>
+                <input id="pageText" type="text">
+                <span id="goButton"></span>
+            </div>
+        </div>
+    </div>
+</div>

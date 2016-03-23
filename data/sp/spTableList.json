@@ -1,0 +1,110 @@
+[
+  {
+    "id":1,
+    "host":"www.qq.com",
+    "http":"76.67%",
+    "arallev":1,
+    "stratTime":"2015/12/1 12:30:00",
+    "shichan":45,
+    "unum":2567,
+    "liulian":76,
+    "ywulian":13789,
+    "errortime":9
+  },
+  {
+    "id":2,
+    "host":"www.sina.com",
+    "http":"50.28%",
+    "arallev":2,
+    "stratTime":"2015/12/1 12:45:00",
+    "shichan":30,
+    "unum":5423,
+    "liulian":69,
+    "ywulian":11406,
+    "errortime":14
+  },
+  {
+    "id":4,
+    "host":"www.taobao.com",
+    "http":"65.66%",
+    "arallev":2,
+    "stratTime":"2015/12/1 13:00:00",
+    "shichan":15,
+    "unum":3356,
+    "liulian":98,
+    "ywulian":18284,
+    "errortime":17
+  },
+  {
+    "id":5,
+    "host":"www.google.com.hk",
+    "http":"70.23%",
+    "arallev":1,
+    "stratTime":"2015/12/1 13:00:00",
+    "shichan":15,
+    "unum":1479,
+    "liulian":92,
+    "ywulian":15069,
+    "errortime":18
+  },
+  {
+    "id":6,
+    "host":"www.sohu.com",
+    "http":"76.67%",
+    "arallev":1,
+    "stratTime":"2015/12/1 13:00:00",
+    "shichan":15,
+    "unum":1938,
+    "liulian":65,
+    "ywulian":16117,
+    "errortime":6
+  },
+  {
+    "id":7,
+    "host":"www.163.com",
+    "http":"76.85%",
+    "arallev":1,
+    "stratTime":"2015/12/1 13:00:00",
+    "shichan":15,
+    "unum":1199,
+    "liulian":84,
+    "ywulian":19345,
+    "errortime":16
+  },
+  {
+    "id":8,
+    "host":"www.soso.com",
+    "http":"46.22%",
+    "arallev":2,
+    "stratTime":"2015/12/1 13:00:00",
+    "shichan":15,
+    "unum":4365,
+    "liulian":36,
+    "ywulian":15436,
+    "errortime":13
+  },
+  {
+    "id":9,
+    "host":"www.youku.com",
+    "http":"76.73%",
+    "arallev":1,
+    "stratTime":"2015/12/1 13:00:00",
+    "shichan":15,
+    "unum":1678,
+    "liulian":98,
+    "ywulian":11689,
+    "errortime":11
+  },
+  {
+    "id":10,
+    "host":"www.ifeng.com",
+    "http":"51.24%",
+    "arallev":2,
+    "stratTime":"2015/12/1 12:30:00",
+    "shichan":15,
+    "unum":4579,
+    "liulian":52,
+    "ywulian":12456,
+    "errortime":15
+  }
+]

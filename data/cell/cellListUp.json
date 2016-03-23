@@ -1,0 +1,41 @@
+{
+  "thisCell":[
+    {
+      "cellid":100679681,
+      "cellname":"留下镇SM_1",
+      "area":"西湖区",
+      "alarmlevel":2,
+      "begintime":"2015/12/1 13:00:00",
+      "continuetime":1,
+      "webresponse":1.6,
+      "impactuser":586,
+      "traffic":354.6,
+      "bussiness":13564,
+      "hisalarm":94
+    }
+  ],
+  "tuijianPM":[
+    {
+      "indictor":"HS_Users_Cong_Num",
+      "value":28,
+      "confidence":"43.46%"
+    },
+    {
+      "indictor":"PS_Power_Cong_Num",
+      "value":38,
+      "confidence":"33.46%"
+    },
+    {
+      "indictor":"UL_CE_Utilizing_Ratio",
+      "value":"76.36%",
+      "confidence":"13.46%"
+    }
+  ],
+  "tuijianFM":[
+    {
+      "indictor":"用户面承载链路故障",
+      "alarmlevel":28,
+      "confidence":"63.23%"
+    }
+  ]
+}

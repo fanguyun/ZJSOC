@@ -1,0 +1,85 @@
+<div id="nav">
+    <ul id="navUl">
+        <li class="navIcon">首页 ></li>
+        <li class="navIcon">用户监控 ></li>
+        <li class="navIcon" id="thisUserName">...</li>
+    </ul>
+</div>
+<div id="monitor" class="block" style="margin-top:0px!important;">
+    <div id="drillMonitorNum"><div class="drillUser"><span id="drillInfo" class="redIcon"></span><span id="drillUser" class="userIcon"></span><span id="drillName">...</span></div></div>
+    <div id="userNum"><span id="drillSNum">19</span><span class="small">次</span><span class="smallInfo">24小时异常次数</span></div>
+</div>
+<div id="userException">
+    <p class="titleHead">用户异常分析</p>
+    <div>
+        <div id="oneHourCount"></div>
+        <div id="oneHourError"></div>
+        <div id="oneHourTrend"></div>
+        <div id="oneDayError">
+            <h4>用户24小时异常情况 <span><!--(2015-11-25)--></span></h4>
+        </div>
+    </div>
+
+</div>
+<div id="spInfo">
+    <p class="titleHead">异常话单分析</p>
+    <div id="singleCont" class="cf">
+        <div id="singleLeft">
+            <!--<div class="singleCard activeCard">
+                <p class="singleCardTitle">Time 2015/12/23 9:10:23</p>
+                <div class="singleCardCont cf">
+                    <div class="singleCLeft">
+                        <span class="singleSpan">KQI指标</span>
+                        <ul class="singleUL">
+                            <li>HTTP成功率(%)：20.6%</li>
+                            <li>响应时延(s)：0.9</li>
+                            <li>显示时延(s)：4.3</li>
+                        </ul>
+                    </div>
+                    <div class="singleCRight">
+                        <span class="singleSpan">异常纬度</span>
+                        <ul class="singleUL">
+                            <li>IMEI:-</li>
+                            <li>CellID:100883458</li>
+                            <li>GridID:1567</li>
+                            <li>APN:-</li>
+                            <li>SGW_IP:-</li>
+                            <li>PGW_IP:-</li>
+                            <li>SP_IP:-</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="singleCard">
+                <p class="singleCardTitle">Time 2015/12/23 9:10:23</p>
+                <div class="singleCardCont cf">
+                    <div class="singleCLeft">
+                        <span class="singleSpan">KQI指标</span>
+                        <ul class="singleUL">
+                            <li>HTTP成功率(%)：20.6%</li>
+                            <li>响应时延(s)：0.9</li>
+                            <li>显示时延(s)：4.3</li>
+                        </ul>
+                    </div>
+                    <div class="singleCRight">
+                        <span class="singleSpan">异常纬度</span>
+                        <ul class="singleUL">
+                            <li>IMEI:-</li>
+                            <li>CellID:100883458</li>
+                            <li>GridID:1567</li>
+                            <li>APN:-</li>
+                            <li>SGW_IP:-</li>
+                            <li>PGW_IP:-</li>
+                            <li>SP_IP:-</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div id="singleRight">
+            <div id="httpState" class="drillBlock"></div>
+            <div id="callBackState" class="drillBlock"></div>
+            <div id="displayBackState" class="drillBlock"></div>
+        </div>
+    </div>
+</div>

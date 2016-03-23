@@ -1,0 +1,117 @@
+<div id="monitor" class="block">
+    <div id="monitorNum"><span id="cellmNum">0</span><span class="small">监控小区</span></div>
+    <div id="serNum"><span id="cellsNum">0</span><span class="small">个</span><span class="smallInfo">严重警告</span> </div>
+    <div id="norNum"><span id="cellnNum">0</span><span class="small">个</span><span class="smallInfo">普通警告</span> </div>
+    <div id="refreshTime"><span id="refreshInfo">更新时间:<span id="refreshDate"></span>（每十五分钟刷新一次）</span><span id="handRefresh"></span></div>
+</div>
+<div id="spInfo">
+    <div id="selectBlock" class="none">
+        <ul class="cellSelect">
+            <li>全部告警小区</li>
+            <li>网页</li>
+        </ul>
+        <div class="serchText">
+            <input type="text" placeholder="输入小区名称查找">
+        </div>
+        <span class="serchBtn"></span>
+    </div>
+    <!--24小时告警趋势-->
+    <div class="qushiObj">
+        <div id="cellTrendBlock"></div>
+        <a href="#cellGridShow?page=cell"></a>
+    </div>
+    <!--区域地图-->
+    <div id="mapBlock">
+        <ul class="mapBlocktips">
+            <li><span class="yanzhong"></span>严重告警</li>
+            <li><span class="normal"></span>普通告警</li>
+        </ul>
+    </div>
+    <table id="trendTable">
+        <tr class="tHead">
+            <td class="tdPadding">ID</td>
+            <td>小区名称</td>
+            <td>行政区</td>
+            <td>告警级别</td>
+            <td>告警起始时间</td>
+            <td>告警持续时长(H)</td>
+            <td>Web业务响应时延(S)</td>
+            <td>影响用户数</td>
+            <td>流量（GB）</td>
+            <td>业务量（次）</td>
+            <td>历史告警次数</td>
+            <td class="tdPadding">操作</td>
+        </tr>
+        <tbody class="tBody" id="cellTbody">
+        <!--<tr>
+            <td>101275394</td>
+            <td>武林广场台及隧道区间</td>
+            <td>西湖区</td>
+            <td><span class="eTdIcon"></span></td>
+            <td>2015.11.18  02:00:00</td>
+            <td>3</td>
+            <td><span class="eTd">2</span></td>
+            <td>458</td>
+            <td>2514</td>
+            <td>2514</td>
+            <td>198</td>
+            <td><span class="analButton">分析</span></td>
+        </tr>
+        <tr>
+            <td>101275394</td>
+            <td>武林广场台及隧道区间</td>
+            <td>西湖区</td>
+            <td><span class="wTdIcon"></span></td>
+            <td>2015.11.18  02:00:00</td>
+            <td>3</td>
+            <td><span class="eTd">2</span></td>
+            <td>458</td>
+            <td>2514</td>
+            <td>2514</td>
+            <td>198</td>
+            <td><span class="analButton">分析</span></td>
+        </tr>
+        <tr>
+            <td>101275394</td>
+            <td>武林广场台及隧道区间</td>
+            <td>西湖区</td>
+            <td><span class="eTdIcon"></span></td>
+            <td>2015.11.18  02:00:00</td>
+            <td>3</td>
+            <td><span class="eTd">2</span></td>
+            <td>458</td>
+            <td>2514</td>
+            <td>2514</td>
+            <td>198</td>
+            <td><span class="analButton">分析</span></td>
+        </tr>-->
+        </tbody>
+    </table>
+    <div id="tableFooter">
+        <div id="tFooterLeft">
+            <div class="select">
+                <div class="selOption">10行</div>
+                <div class="selOption">50行</div>
+                <div class="selOption">100行</div>
+            </div>
+            <div class="totalPage" id="cellTotalPage">共0条</div>
+        </div>
+        <div id="tFooterRight">
+            <span class="pageButton" id="prevPage"></span>
+            <span class="pageButton pageActive" type="yema">1</span>
+            <span class="pageButton" type="yema">2</span>
+            <!--
+            <span class="pageButton">3</span>
+            <span class="pageButton">4</span>
+            <span class="pageButton">5</span>
+            <span class="pageButton">...</span>
+            <span class="pageButton">16</span>-->
+            <span class="pageButton" id="nextPage"></span>
+            <div class="goAnyPage">
+                <span class="goText">跳转</span>
+                <input id="pageText" type="text">
+                <span id="goButton"></span>
+            </div>
+        </div>
+    </div>
+</div>
