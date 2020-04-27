@@ -35,9 +35,9 @@ var cellMonitoring={
         $("#handRefresh").click(function(){
             window.location.reload();
         });
-        var url="data/cell/cellTotal.json";
+        var url="data/cell/celltotal.json";
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: url,
             dataType: "json",
             contentType:"application/json",
@@ -65,7 +65,7 @@ var cellMonitoring={
         var nameData=[];
         var valueData=[];
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: url,
             dataType: "json",
             contentType:"application/json",
@@ -428,11 +428,11 @@ var cellMonitoring={
     //小区表格列表
     cellTableListInt:function(pageNum){
         var scope=this;
-        var url="data/cell/cellList.json";
+        var url="data/cell/celllist.json";
         var strNum=(pageNum-1)*10;
         var endNum=pageNum*10;
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: url,
             dataType: "json",
             contentType:"application/json",
@@ -511,13 +511,13 @@ var cellMonitoring={
             }
         });
         var type=data;
-        var url="data/cell/cellQSlist.json";
+        var url="data/cell/cellqslist.json";
         var timeData=[];
         var erorData=[];
         var normalData=[];
         var dataValue;
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: url,
             dataType: "json",
             contentType:"application/json",
@@ -641,14 +641,14 @@ var cellMonitoring={
     //区域表格列表
     qycellTableListInt:function(){
         var scope=this;
-        var url="data/cell/cellList.json";
+        var url="data/cell/celllist.json";
         var urlData=conmon.getUrlData();
         var areaName="";
         if(urlData){
             areaName=decodeURIComponent(urlData[1].split("=")[1]);
         }
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: url,
             dataType: "json",
             contentType:"application/json",
@@ -798,9 +798,9 @@ var cellMonitoring={
     //某个小区详请
     thisCellListShowUp:function(){
         var scope=this;
-        var url="data/cell/cellListUp.json";
+        var url="data/cell/celllistup.json";
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: url,
             dataType: "json",
             contentType:"application/json",
